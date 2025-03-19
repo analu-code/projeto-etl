@@ -1,4 +1,5 @@
 # Projeto de ETL - Análise, validação e visualização
+💻 https://projeto-etl.streamlit.app
 
 ## 📌 Descrição do Projeto
 Este projeto foi desenvolvido durante um workshop de ETL com Python (https://www.youtube.com/watch?v=JuOyNPjAer8) e tem como objetivo realizar uma análise exploratória de dados, validar dados e disponibilizar uma interface para visualização dos resultados.
