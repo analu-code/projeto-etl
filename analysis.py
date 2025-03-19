@@ -3,10 +3,6 @@ from ydata_profiling import ProfileReport
 import streamlit as st
 from streamlit_pandas_profiling import st_profile_report
 
-# df = pd.read_csv('data.csv')
-# profile = ProfileReport (df, title="Profiling Report")
-# profile.to_file("output.html")
-
 def profiling():
     if "preview" not in st.session_state: 
             st.session_state.preview = True
