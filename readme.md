@@ -3,6 +3,9 @@
 ## 📌 Descrição do Projeto
 Este projeto foi desenvolvido durante um workshop de ETL com Python (https://www.youtube.com/watch?v=JuOyNPjAer8) e tem como objetivo realizar uma análise exploratória de dados, validar dados e disponibilizar uma interface para visualização dos resultados.
 
+### Importante!
+O CSV data.csv é o arquivo CSV correto, que funcionará em todas as etapas. O CSV data_2025.csv é um arquivo semelhante, porém com erros (que são identificados na etapa de validação de dados) para exercitar o processo de correção de dados.
+
 ## 🛠️ Tecnologias Utilizadas
 - **Python**
 - **Excel**

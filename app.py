@@ -10,7 +10,6 @@ from analysis import profiling
 
 df = pd.read_csv('data.csv')
 profile = ProfileReport (df, title="Profiling Report")
-#profile.to_file("output.html")
 
 tab1, tab2, tab3 = st.tabs(["Validador", "Análise Exploratória", "Dashboard"])
 
