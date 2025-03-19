@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ValidationError
 from typing import Optional
 
 class PlanilhaAnuncios(BaseModel):
@@ -10,10 +10,12 @@ class PlanilhaAnuncios(BaseModel):
     Date: str = Field(..., description="Data no formato YYYY-MM-DD")
     AdSet_name: str = Field(..., description="Nome do conjunto de anúncios")
     Amount_spent: float = Field(..., ge=0, le=1200.00, description="Valor gasto no anúncio (mínimo 0, máximo 600)")
-    Link_clicks: Optional[float] = Field(None, description="Quantidade de cliques no link")
+    Link_clicks: float = Field(None, description="Quantidade de cliques no link")
     Impressions: int = Field(..., description="Número de impressões")
-    Conversions: Optional[float] = Field(None, description="Número de conversões")
-    Segmentação: str = Field(..., description="Tipo de segmentação utilizada")
+    Conversions: float = Field(None, description="Número de conversões")
+    Segmentação: str = Field(None, description="Tipo de segmentação utilizada")
     Tipo_de_Anúncio: str = Field(..., description="Tipo do anúncio")
     Fase: str = Field(..., description="Fase do lançamento ou campanha")
 
+    class Config:
+         validate_default = True
